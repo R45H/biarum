@@ -1,0 +1,15 @@
+// Служебные файлы
+@import 'global/variables'; // SASS переменные
+@import 'global/fonts'; // Шрифты
+@import 'global/global'; // Глобальные стили
+// =====
+
+// Блоки
+/* Blocks will be inserted here */
+// =====
+
+// Внешние контейнеры
+@import 'blocks/header'; // Шапка
+@import 'blocks/section'; // Секция контента
+@import 'blocks/main'; // Контейнер контента
+// =====
