@@ -1,4 +1,5 @@
 html {
+	box-sizing: border-box;
 	height: 100%;
 	font-size: 6px;
 
@@ -19,12 +20,18 @@ html {
 	}
 }
 
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
 body {
 	height: 100%;
 	font-size: 1.6rem;
 	font-family: $font-main;
 	color: $color-text;
-	line-height: 1.5;
+	line-height: 1.4;
 
 	&.noscroll {
 		overflow: hidden;
@@ -57,4 +64,29 @@ img {
 
 ::selection {
 
+}
+
+.container {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	max-width: 100%;
+
+	@include screen-sm() {
+		width: 540px;
+	}
+
+	@include screen-md() {
+		width: 720px;
+	}
+
+	@include screen-lg() {
+		width: 960px;
+	}
+
+	@include screen-xl() {
+		width: 1140px;
+	}
 }

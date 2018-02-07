@@ -1,12 +1,29 @@
-$color-main: null;
-$color-text: #333;
+$color-main: #64c800;
+$color-main-hover: #67ad21;
+$color-main-active: #497f12;
+
+$color-second: #1b8aaa;
+$color-second-hover: #596799;
+$color-second-focus: #78c5db;
+$color-second-active: #687bc4;
+$color-second-disabled: #80c9de;
+
+$color-light: #e8e8e8;
+$color-lighter: #f5f5f5;
+
+$color-text: #3f4049;
+
+$color-text-light: #a8b6c7;
+$color-text-light-hover: #c3c3c3;
 
 $point-sm: 576px;
 $point-md: 768px;
 $point-lg: 992px;
 $point-xl: 1200px;
 
-$font-main: sans-serif;
+$font-main: 'MyriadPro', sans-serif;
+$font-second: 'TradeGothic-BoldCondTwenty', sans-serif;
+$font-third: 'Open Sans', sans-serif;
 
 $duration: .3s;
 
