@@ -11,13 +11,21 @@ $name: header;
 	&__wrap {
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
 		height: 100%;
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
 
 	&__col {
+		display: flex;
+		align-items: center;
+
+		&_hidden-desktop {
+
+			@include screen-md() {
+				display: none;
+			}
+		}
 
 		&_hidden-mobile {
 
@@ -31,5 +39,12 @@ $name: header;
 		display: flex;
 		align-items: center;
 		height: calc(#{$header-height} - 20px);
+	}
+
+	&__toggle {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
 	}
 }
