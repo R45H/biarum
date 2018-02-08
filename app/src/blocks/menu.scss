@@ -1,0 +1,56 @@
+$name: menu;
+
+.#{$name} {
+	display: flex;
+	flex-wrap: wrap;
+
+	&__item {
+		font-family: $font-third;
+		line-height: 1.6;
+
+		&_disabled {
+			opacity: .6;
+
+			.#{$name} {
+				// =====
+
+				&__link {
+					cursor: default;
+
+					&:hover {
+						border-bottom-color: transparent;
+					}
+
+					&:focus {
+						font-weight: normal;
+					}
+
+					&:active {
+						text-shadow: none;
+					}
+				}
+			}
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+		color: $color-lighter;
+		border-bottom: 1px solid transparent;
+		margin: 0 3rem;
+		transition: $duration ease;
+
+		&:hover {
+			border-bottom-color: inherit;
+		}
+
+		&:focus {
+			font-weight: 600;
+		}
+
+		&:active {
+			text-shadow: 0 5px 5px black;
+			border-bottom-color: transparent;
+		}
+	}
+}

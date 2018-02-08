@@ -1,5 +1,6 @@
 $name: main;
 
 .#{$name} {
-
+	padding-top: $header-height;
+	min-height: 100%;
 }

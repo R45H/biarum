@@ -1,2 +1,16 @@
 // HEADER
 header.header
+	.header__wrap.container
+		.header__col
+			a.logo.header__logo(href='#')
+				img.logo__img(src='img/logo.png')
+
+		.header__col.header__col_hidden-mobile
+			ul.menu
+
+				each val, i in menu
+					li.menu__item(class= !i ? 'menu__item_disabled' : '')
+						a.menu__link(href= val.link)= val.name
+
+		.header__col.header__col_hidden-mobile
+			a.btn(href='#') Lorem ipsum

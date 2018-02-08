@@ -12,6 +12,7 @@ $color-light: #e8e8e8;
 $color-lighter: #f5f5f5;
 
 $color-text: #3f4049;
+$color-text-focus: #888;
 
 $color-text-light: #a8b6c7;
 $color-text-light-hover: #c3c3c3;
@@ -21,13 +22,15 @@ $point-md: 768px;
 $point-lg: 992px;
 $point-xl: 1200px;
 
-$font-main: 'MyriadPro', sans-serif;
-$font-second: 'TradeGothic-BoldCondTwenty', sans-serif;
-$font-third: 'Open Sans', sans-serif;
+$font-main: 'MyriadPro', sans-serif; // normal, normal i, 600, 600 i
+$font-second: 'TradeGothic-BoldCondTwenty', sans-serif; // normal
+$font-third: 'Open Sans', sans-serif; // normal, normal i, 600, 600 i
 
-$duration: .3s;
+$duration: .15s;
 
 $path: '../';
+
+$header-height: 8rem;
 
 // ----------------------------
 // МИКСИНЫ ДЛЯ ТЕКУЩЕГО ПРОЕКТА

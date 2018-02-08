@@ -1,0 +1,20 @@
+{
+	"menu": [
+		{
+			"link": "#",
+			"name": "Lorem 1"
+		},
+		{
+			"link": "#",
+			"name": "Lorem 2"
+		},
+		{
+			"link": "#",
+			"name": "Lorem 3"
+		},
+		{
+			"link": "#",
+			"name": "Lorem 4"
+		}
+	]
+}

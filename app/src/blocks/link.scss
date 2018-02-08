@@ -1,0 +1,28 @@
+$name: link;
+
+.#{$name} {
+	text-decoration: none;
+	color: $color-second;
+
+	&:hover {
+		color: $color-second-hover;
+	}
+
+	&:focus {
+		color: $color-second-focus;
+	}
+
+	&:active {
+		color: $color-second-active;
+	}
+
+	&_disabled {
+		color: $color-second-disabled;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: $color-second-disabled;
+		}
+	}
+}

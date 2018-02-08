@@ -19,7 +19,7 @@
 	font-family: 'MyriadPro';
 	src: url($path + 'fonts/MyriadPro/MyriadPro-Semibold.woff') format('woff'),
 		url($path + 'fonts/MyriadPro/MyriadPro-Semibold.ttf') format('truetype');
-	font-weight: bold;
+	font-weight: 600;
 	font-style: normal;
 }
 
@@ -27,10 +27,9 @@
 	font-family: 'MyriadPro';
 	src: url($path + 'fonts/MyriadPro/MyriadPro-SemiboldIt.woff') format('woff'),
 		url($path + 'fonts/MyriadPro/MyriadPro-SemiboldIt.ttf') format('truetype');
-	font-weight: bold;
+	font-weight: 600;
 	font-style: italic;
 }
-
 /* ===== */
 
 /* TradeGothic */
@@ -41,7 +40,6 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
 /* ===== */
 
 /* Open Sans */
@@ -53,4 +51,27 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Open Sans';
+	src: url($path + 'fonts/OpenSans/OpenSansRegularItalic.woff') format('woff'),
+		url($path + 'fonts/OpenSans/OpenSansRegularItalic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url($path + 'fonts/OpenSans/OpenSansSemiBold.woff') format('woff'),
+		url($path + 'fonts/OpenSans/OpenSansSemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url($path + 'fonts/OpenSans/OpenSansSemiBoldItalic.woff') format('woff'),
+		url($path + 'fonts/OpenSans/OpenSansSemiBoldItalic.ttf') format('truetype');
+	font-weight: 600;
+	font-style: italic;
+}
 /* ===== */
