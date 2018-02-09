@@ -35,3 +35,93 @@ function toggleBodyScroll(noscroll) {
 	}
 }
 /* ========== */
+
+/* Добавление хеша строке с ID */
+function addIdHash(id) {
+
+	if (id && id.charAt(0) !== '#') {
+		id = '#' + id;
+	}
+
+	return id;
+}
+/* ========== */
+
+/* Функция открытия / закрытия модалки */
+function toggleModal(action, modalId) {
+
+	var
+		id = addIdHash(modalId),
+		$modal = $(id),
+		$body = $('body'),
+		classBlock = 'modal',
+		classVisible = classBlock + '_visible',
+		classWrap = classBlock + '__wrap',
+		classWrapVisible = classBlock + '__wrap_visible',
+		classInput = 'input',
+		classFog = 'fog',
+		$wrap = $modal.find('.' + classWrap),
+		delay = 300,
+		closeOnEsc = function(event) { // Закрытие модалки при нажатии ESC
+			if (event.keyCode != 27) return;
+			toggleModal('close', id);
+		};
+
+	if (action == 'open') {
+
+		if (!$modal.length) {
+			console.log('Модалка не найдена!');
+			return;
+		}
+
+		if ($modal.hasClass(classVisible)) {
+			console.log('Модалка уже открыта!');
+			return;
+		}
+
+		$modal.addClass(classVisible);
+
+		toggleBodyScroll(true);
+		$body.append('<div class="' + classFog + '"></div>');
+		$('.' + classFog).fadeIn(delay);
+
+		$(document).on('keydown', closeOnEsc);
+
+		setTimeout(function() {
+			$wrap.addClass(classWrapVisible);
+		}, 0);
+
+		setTimeout(function() {
+			$modal.find('.' + classInput).first().focus();
+		}, delay);
+	}
+
+	if (action == 'close') {
+
+		if (!$modal.length) {
+			console.log('Модалка не найдена!');
+			return;
+		}
+
+		if (!$modal.hasClass(classVisible)) {
+			console.log('Модалка уже закрыта!');
+			return;
+		}
+
+		$(document).off('keydown', closeOnEsc);
+
+		$modal
+			.find('.' + classInput)
+			.val('');
+
+		$wrap.removeClass(classWrapVisible);
+		$('.' + classFog).fadeOut(delay);
+
+		setTimeout(function() {
+			$modal.removeClass(classVisible);
+			toggleBodyScroll(false);
+			$('.' + classFog).remove();
+		}, delay);
+	}
+}
+/* ========== */
