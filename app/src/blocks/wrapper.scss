@@ -1,0 +1,16 @@
+$name: wrapper;
+
+.#{$name} {
+	height: 100%;
+
+	&__toggle {
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: $header-height;
+
+		@include screen-sm() {
+			display: none;
+		}
+	}
+}

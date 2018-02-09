@@ -7,6 +7,7 @@ $name: header;
 	left: 0;
 	width: 100%;
 	height: $header-height;
+	z-index: 30;
 
 	&__wrap {
 		display: flex;
@@ -20,16 +21,13 @@ $name: header;
 		display: flex;
 		align-items: center;
 
-		&_hidden-desktop {
-
-			@include screen-md() {
-				display: none;
-			}
+		&_not-flexible {
+			flex: none;
 		}
 
 		&_hidden-mobile {
 
-			@include screen-md(max) {
+			@include screen-sm(max) {
 				display: none;
 			}
 		}
@@ -39,12 +37,5 @@ $name: header;
 		display: flex;
 		align-items: center;
 		height: calc(#{$header-height} - 20px);
-	}
-
-	&__toggle {
-		position: absolute;
-		top: 0;
-		right: 0;
-		height: 100%;
 	}
 }

@@ -10,6 +10,8 @@
 @import 'blocks/logo'; // Лого
 @import 'blocks/link'; // Ссылка
 @import 'blocks/toggle/toggle'; // Гамбургер
+@import 'blocks/aside/aside'; // Боковое меню
+@import 'blocks/fog'; // Затемнение экрана
 /* Blocks will be inserted here */
 // =====
 
@@ -17,4 +19,5 @@
 @import 'blocks/header'; // Шапка
 @import 'blocks/section'; // Секция контента
 @import 'blocks/main'; // Контейнер контента
+@import 'blocks/wrapper'; // Внешний контейнер
 // =====

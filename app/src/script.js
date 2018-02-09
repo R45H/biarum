@@ -4,6 +4,7 @@ $(function() {
 
 	(function() {
 		//=require 'blocks/toggle/toggle.js'
+		//=require 'blocks/aside/aside.js'
 	}());
 	/* Blocks will be inserted here */
 });

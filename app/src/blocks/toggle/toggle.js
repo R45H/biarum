@@ -1,22 +1,22 @@
 var
-	classBlock = 'toggle',
-	classActive = classBlock + '_active',
-	$block = $('.' + classBlock),
-	pointMobile = 768;
+	classToggle = 'toggle',
+	classToggleActive = classToggle + '_active',
+	$toggle = $('.' + classToggle),
+	pointMobile = 576;
 
-$block.on('click', function() {
-	$(this).toggleClass(classActive);
+$toggle.on('click', function() {
+	$(this).toggleClass(classToggleActive);
 });
 
 $(window).on('resize', function() {
 
 	if (window.innerWidth < pointMobile) return;
 
-	$block.each(function() {
+	$toggle.each(function() {
 		var $this = $(this);
 
-		if ($this.hasClass(classActive)) {
-			$this.removeClass(classActive);
+		if ($this.hasClass(classToggleActive)) {
+			$this.removeClass(classToggleActive);
 		}
 	});
 });

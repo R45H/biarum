@@ -1,0 +1,59 @@
+$name: aside;
+
+.#{$name} {
+	position: fixed;
+	top: 0;
+	right: -250px;
+	bottom: 0;
+	width: 250px;
+	max-width: 80%;
+	background: $color-text;
+	padding: $header-height 0 0;
+	transition: $duration ease;
+	z-index: 50;
+
+	&__list {
+		overflow: auto;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__item {
+
+		&_bottom {
+			margin-top: auto;
+			border-top: 1px solid $color-lighter;
+		}
+	}
+
+	&__link {
+		@extend .menu__link;
+		margin: 0;
+		padding: 1.2rem 3rem;
+		display: block;
+		border-bottom: none;
+
+		&:hover {
+
+			.#{$name} {
+				// =====
+
+				&__link-i {
+					border-bottom-color: inherit;
+				}
+			}
+		}
+	}
+
+	&__link-i {
+		display: inline-block;
+		transition: $duration ease;
+		border-bottom: 1px solid transparent;
+	}
+
+	&_opened {
+		right: 0;
+		transition: $duration * 2 ease;
+	}
+}
