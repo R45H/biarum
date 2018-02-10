@@ -1,5 +1,22 @@
 $name: section;
 
 .#{$name} {
+	padding: 7rem 0;
+	min-height: calc(100vh - #{$header-height});
+	background: no-repeat center / cover;
 
+	&_spray_1 {
+		background: url($path + 'img/content/spray/01-1.png') no-repeat right top,
+			url($path + 'img/content/spray/01-2.png') no-repeat left bottom,
+			url($path + 'img/content/spray/01-3.png') no-repeat 30% center;
+	}
+
+	&_spray_2 {
+		background: url($path + 'img/content/spray/02-1.png') no-repeat left top,
+			url($path + 'img/content/spray/02-2.png') no-repeat right bottom;
+	}
+
+	&_gray {
+		background-color: $color-lighter;
+	}
 }

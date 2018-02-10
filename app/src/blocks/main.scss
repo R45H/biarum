@@ -3,4 +3,12 @@ $name: main;
 .#{$name} {
 	padding-top: $header-height;
 	min-height: 100%;
+
+	&__space-bot {
+		margin-bottom: 6rem;
+	}
+
+	&__space-bot_sm {
+		margin-bottom: 2rem;
+	}
 }
