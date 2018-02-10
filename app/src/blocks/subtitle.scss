@@ -1,0 +1,20 @@
+$name: subtitle;
+
+.#{$name} {
+	display: block;
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: normal;
+
+	&_sm {
+		font-size: 2rem;
+	}
+
+	&_white {
+		color: white;
+	}
+
+	&_colored {
+		color: $color-main;
+	}
+}

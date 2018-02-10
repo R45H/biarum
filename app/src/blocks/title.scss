@@ -1,0 +1,60 @@
+$name: title;
+
+.#{$name} {
+	font-family: $font-second;
+	text-transform: uppercase;
+	font-size: 5.2rem;
+	font-weight: normal;
+	letter-spacing: -.025em;
+	line-height: .9;
+	text-align: center;
+
+	&__head {
+		display: inline-block;
+	}
+
+	&__tail {
+		display: inline-block;
+		margin-left: .2em;
+		color: $color-second;
+	}
+
+	&_lg {
+		font-size: 8.2rem;
+	}
+
+	&_sm {
+		font-size: 1.8rem;
+	}
+
+	&_white {
+
+		.#{$name} {
+			// =====
+
+			&__head {
+				color: white;
+			}
+
+			&__tail {
+				color: $color-main;
+			}
+		}
+	}
+
+	&_col {
+
+		.#{$name} {
+			// =====
+
+			&__head,
+			&__tail {
+				display: block;
+			}
+
+			&__tail {
+				margin-left: 0;
+			}
+		}
+	}
+}
