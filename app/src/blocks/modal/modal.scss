@@ -32,7 +32,7 @@ $name: modal;
 		transition: $duration * 2 ease transform, $duration * 2 linear opacity;
 
 		@include screen-sm() {
-			width: 700px;
+			width: 50rem;
 			max-width: 100%;
 			height: auto;
 		}
@@ -122,6 +122,10 @@ $name: modal;
 			overflow-y: auto;
 			padding: 2.5rem 15px 15px;
 		}
+	}
+
+	&__input {
+		margin-bottom: 2rem;
 	}
 
 	&_visible {

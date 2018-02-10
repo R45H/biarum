@@ -110,14 +110,13 @@ function toggleModal(action, modalId) {
 
 		$(document).off('keydown', closeOnEsc);
 
-		$modal
-			.find('.' + classInput)
-			.val('');
-
 		$wrap.removeClass(classWrapVisible);
 		$('.' + classFog).fadeOut(delay);
 
 		setTimeout(function() {
+			$modal
+				.find('.' + classInput)
+				.val('');
 			$modal.removeClass(classVisible);
 			toggleBodyScroll(false);
 			$('.' + classFog).remove();

@@ -1,0 +1,94 @@
+$name: input;
+
+.#{$name} {
+	display: block;
+	appearance: none;
+	border-radius: 0;
+	padding: .7em;
+	font-family: $font-third;
+	font-size: 1.6rem;
+	color: $color-text-light;
+	border: 1px solid;
+	transition: $duration ease;
+
+	@include input-autofill($color-text-light);
+
+	@include input-placeholder {
+		color: $color-text-light;
+		transition: $duration ease;
+	}
+
+	&:hover {
+		color: $color-text-light-hover;
+		border-color: $color-text-light-hover;
+
+		@include input-autofill($color-text-light-hover);
+
+		@include input-placeholder {
+			color: $color-text-light-hover;
+		}
+	}
+
+	&:focus {
+		color: $color-text-light-hover;
+		border-color: $color-light;
+		box-shadow: 0 0 3px 1px $color-light;
+
+		@include input-autofill($color-text-light-hover);
+
+		@include input-placeholder {
+			text-indent: 10px;
+			color: $color-text-light-hover;
+		}
+	}
+
+	&:active {
+		color: $color-text-focus;
+		border-color: $color-light;
+		box-shadow: none;
+
+		@include input-autofill($color-text-focus);
+
+		@include input-placeholder {
+			text-indent: 10px;
+			color: $color-text-focus;
+		}
+	}
+
+	&[disabled],
+	&_disabled {
+		color: $color-text-light-hover;
+		border-color: $color-light;
+		background-color: $color-lighter;
+		cursor: default;
+
+		@include input-autofill($color-text-light-hover);
+
+		@include input-placeholder {
+			color: $color-text-light-hover;
+		}
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: $color-text-light-hover;
+			border-color: $color-light;
+			box-shadow: none;
+
+			@include input-autofill($color-text-light-hover);
+
+			@include input-placeholder {
+				color: $color-text-light-hover;
+				text-indent: 0;
+			}
+		}
+	}
+
+	&_wide {
+		width: 100%;
+	}
+}
+
+textarea.#{$name} {
+	height: 5em;
+}
