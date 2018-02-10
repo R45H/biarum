@@ -1,0 +1,40 @@
+{
+	"slider_lg": [
+		{
+			"img": "img/content/slider-1/01.jpg",
+			"title": [
+				"Lorem",
+				"1?"
+			],
+			"subtitle": "Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor",
+			"bottom_title": [
+				"Lorem ipsum dolor sit amet,",
+				"consectetur adipiscing elit"
+			]
+		},
+		{
+			"img": "img/content/slider-1/02.jpg",
+			"title": [
+				"Lorem",
+				"1?"
+			],
+			"subtitle": "Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor",
+			"bottom_title": [
+				"Lorem ipsum dolor sit amet,",
+				"consectetur adipiscing elit"
+			]
+		},
+		{
+			"img": "img/content/slider-1/03.jpg",
+			"title": [
+				"Lorem",
+				"1?"
+			],
+			"subtitle": "Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor",
+			"bottom_title": [
+				"Lorem ipsum dolor sit amet,",
+				"consectetur adipiscing elit"
+			]
+		}
+	]
+}

@@ -19,4 +19,8 @@ $name: section;
 	&_gray {
 		background-color: $color-lighter;
 	}
+
+	&_pad_none {
+		padding: 0;
+	}
 }

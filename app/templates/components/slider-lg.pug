@@ -1,0 +1,21 @@
+.slider-lg
+
+	each val, i in slider_lg
+		.slider-lg__item
+			.slider-lg__i(style='background-image: url(' + val.img + ');')
+				.container
+
+					if !i
+						h1.title.title_lg.title_white.title_col.main__space-bot_sm
+							span.title__head= val.title[0]
+							span.title__tail= val.title[1]
+					else
+						h2.title.title_lg.title_white.title_col.main__space-bot_sm
+							span.title__head= val.title[0]
+							span.title__tail= val.title[1]
+
+					.subtitle.subtitle_white.main__space-bot!= val.subtitle
+
+					.title.title_sm.title_white
+						span.title__head= val.bottom_title[0]
+						span.title__tail= val.bottom_title[1]

@@ -7,6 +7,9 @@ $(function() {
 		//=require 'blocks/aside/aside.js'
 		//=require 'blocks/modal/modal.js'
 	}());
+	(function() {
+		//=require 'blocks/slider-lg/slider-lg.js'
+	}());
 	/* Blocks will be inserted here */
 });
 
