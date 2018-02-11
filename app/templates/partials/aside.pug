@@ -4,8 +4,8 @@ aside.aside
 	ul.aside__list
 
 		each val in menu
-			li.aside__item(class= val.link == page.link ? 'active' : '')
-				a.aside__link(href= val.link)
+			li.aside__item
+				a.aside__link.js-scroll(href= val.link)
 					span.aside__link-i= val.name
 
 		li.aside__item.aside__item_bottom

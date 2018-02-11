@@ -10,8 +10,8 @@ header.header
 			ul.menu
 
 				each val, i in menu
-					li.menu__item(class= !i ? 'menu__item_disabled' : '')
-						a.menu__link(href= val.link)= val.name
+					li.menu__item
+						a.menu__link.js-scroll(href= val.link)= val.name
 
 		.header__col.header__col_not-flexible.header__col_hidden-mobile
 			a.btn(href='#' data-modal='modal') Modal dialog

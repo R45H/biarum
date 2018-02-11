@@ -6,6 +6,7 @@ $(function() {
 		//=require 'blocks/toggle/toggle.js'
 		//=require 'blocks/aside/aside.js'
 		//=require 'blocks/modal/modal.js'
+		//=require 'blocks/scroll.js'
 	}());
 	(function() {
 		//=require 'blocks/slider-lg/slider-lg.js'
