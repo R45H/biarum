@@ -3,13 +3,17 @@ $name: input;
 .#{$name} {
 	display: block;
 	appearance: none;
-	border-radius: 0;
+	border-radius: 3px;
 	padding: .7em;
 	font-family: $font-third;
 	font-size: 1.6rem;
 	color: $color-text-light;
 	border: 1px solid;
 	transition: $duration ease;
+
+	@include screen-sm() {
+		border-radius: 0;
+	}
 
 	@include input-autofill($color-text-light);
 

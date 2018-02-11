@@ -6,17 +6,29 @@ $name: title;
 	font-size: 5.2rem;
 	font-weight: normal;
 	letter-spacing: -.025em;
-	line-height: .9;
+	line-height: 1;
 	text-align: center;
 
+	@include screen-sm() {
+		line-height: .9;
+	}
+
 	&__head {
-		display: inline-block;
+		display: block;
+
+		@include screen-sm() {
+			display: inline-block;
+		}
 	}
 
 	&__tail {
-		display: inline-block;
-		margin-left: .2em;
+		display: block;
 		color: $color-second;
+
+		@include screen-sm() {
+			display: inline-block;
+			margin-left: .2em;
+		}
 	}
 
 	&_lg {
@@ -51,11 +63,17 @@ $name: title;
 
 			&__head,
 			&__tail {
-				display: block;
+
+				@include screen-sm() {
+					display: block;
+				}
 			}
 
 			&__tail {
-				margin-left: 0;
+
+				@include screen-sm() {
+					margin-left: 0;
+				}
 			}
 		}
 	}

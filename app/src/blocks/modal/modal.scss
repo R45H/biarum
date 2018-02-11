@@ -124,6 +124,10 @@ $name: modal;
 		margin-bottom: 2rem;
 	}
 
+	&__btn {
+		margin-top: 2rem;
+	}
+
 	&_visible {
 		display: flex;
 	}

@@ -1,11 +1,11 @@
-$layer-width: 35px;
-$layer-height: 4px;
-$layer-spacing: 6px;
+$layer-width: 25px;
+$layer-height: 2px;
+$layer-spacing: 5px;
 
 $name: toggle;
 
 .#{$name} {
-	padding: 12px;
+	padding: 20px;
 	display: inline-block;
 	cursor: pointer;
 	transition-property: opacity, filter;

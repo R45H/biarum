@@ -3,7 +3,7 @@ $name: section;
 .#{$name} {
 	padding: 7rem 0;
 	min-height: calc(100vh - #{$header-height});
-	background: no-repeat center / cover;
+	background: no-repeat 20% center / cover;
 
 	&:last-child {
 

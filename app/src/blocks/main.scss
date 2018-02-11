@@ -8,6 +8,10 @@ $name: main;
 		margin-bottom: 6rem;
 	}
 
+	&__space-bot_md {
+		margin-bottom: 4rem;
+	}
+
 	&__space-bot_sm {
 		margin-bottom: 2rem;
 	}
@@ -27,6 +31,18 @@ $name: main;
 
 		@include screen-lg() {
 			width: 90%;
+		}
+	}
+
+	&__text-wrap {
+
+		@include screen-md() {
+			margin: 0 auto;
+			width: 90%;
+		}
+
+		@include screen-lg() {
+			width: 80%;
 		}
 	}
 }

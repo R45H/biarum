@@ -3,6 +3,7 @@ $name: btn;
 .#{$name} {
 	border: 0;
 	display: inline-block;
+	width: 100%;
 	font-size: 1.8rem;
 	color: $color-lighter;
 	background-color: $color-main;
@@ -13,25 +14,36 @@ $name: btn;
 	padding: .5em 3em;
 	font-weight: normal;
 	user-select: none;
-	border-radius: .7em;
+	border-radius: 3px;
 	line-height: 1.1;
+	border-top: 3px solid $color-main;
+	border-bottom: 3px solid $color-main-hover;
 	transition: $duration ease;
 	word-break: break-word;
 
+	@include screen-sm() {
+		width: auto;
+		border-radius: .7em;
+		border: none;
+	}
+
 	&:hover {
 		background-color: $color-main-hover;
+		border-color: $color-main-hover;
 	}
 
 	&:focus {
 		background-color: white;
 		color: $color-text-focus;
 		box-shadow: 0 1px 7px $color-main-hover;
+		border-color: white;
 	}
 
 	&:active {
 		background-color: $color-main-active;
 		color: white;
 		box-shadow: none;
+		border-color: $color-main-active;
 	}
 
 	&_disabled {

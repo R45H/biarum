@@ -5,6 +5,10 @@ $name: link;
 	color: $color-second;
 	transition: $duration ease;
 
+	@include screen-sm(max) {
+		font-size: 2.3rem;
+	}
+
 	&:hover {
 		color: $color-second-hover;
 	}
