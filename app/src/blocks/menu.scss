@@ -39,6 +39,7 @@ $name: menu;
 		border-bottom: 1px solid transparent;
 		margin: 0 3rem;
 		transition: $duration ease;
+		outline: none;
 
 		&:hover {
 			border-bottom-color: inherit;

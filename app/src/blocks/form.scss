@@ -1,0 +1,107 @@
+$name: form;
+
+.#{$name} {
+	padding: 0 15px 30px;
+	background-color: $color-lighter;
+
+	@include screen-sm() {
+		margin-bottom: 5rem;
+		padding: 3rem;
+		background-color: white;
+	}
+
+	@include screen-md() {
+		padding: 5rem 6rem;
+	}
+
+	&__title {
+		margin-bottom: 6rem;
+
+		@include screen-md() {
+			padding: 0 6rem;
+		}
+	}
+
+	&__outer-wrap {
+
+		@include screen-sm() {
+			display: flex;
+		}
+	}
+
+	&__img-wrap {
+		margin-bottom: 6rem;
+
+		@include screen-sm() {
+			margin-bottom: 0;
+			flex: 0 0 40%;
+			position: relative;
+		}
+	}
+
+	&__img {
+		width: 100%;
+		padding-bottom: 80%;
+		background: url($path + 'img/content/book.png') no-repeat center / contain;
+
+		@include screen-sm() {
+			background-position: left;
+			padding-bottom: 0;
+			position: absolute;
+			top: 0;
+			bottom: -8rem;
+		}
+
+		@include screen-md() {
+			bottom: -10rem;
+		}
+	}
+
+	&__wrap {
+
+		@include screen-sm() {
+			flex: 0 0 60%;
+		}
+	}
+
+	&__inputs-wrap {
+
+		@include screen-sm() {
+			display: table;
+			width: 100%;
+		}
+	}
+
+	&__input-wrap {
+		margin-bottom: 1rem;
+
+		@include screen-sm() {
+			margin-bottom: 0;
+			display: table-row;
+		}
+	}
+
+	&__input-i {
+
+		@include screen-sm() {
+			display: table-cell;
+			padding-bottom: 2rem;
+		}
+	}
+
+	&__label {
+		display: block;
+		line-height: 2.3;
+		cursor: pointer;
+	}
+
+	&__btn-wrap {
+		text-align: center;
+		margin-top: 4rem;
+
+		@include screen-sm() {
+			text-align: right;
+			margin-top: 2rem;
+		}
+	}
+}

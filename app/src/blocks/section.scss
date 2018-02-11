@@ -5,6 +5,13 @@ $name: section;
 	min-height: calc(100vh - #{$header-height});
 	background: no-repeat center / cover;
 
+	&:last-child {
+
+		@include screen-sm(max) {
+			padding-bottom: 0;
+		}
+	}
+
 	&_spray_1 {
 		background: url($path + 'img/content/spray/01-1.png') no-repeat right top,
 			url($path + 'img/content/spray/01-2.png') no-repeat left bottom,

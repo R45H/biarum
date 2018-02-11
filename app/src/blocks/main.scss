@@ -15,4 +15,18 @@ $name: main;
 	&__slider {
 		margin-bottom: 3rem;
 	}
+
+	&__form {
+		margin-left: -15px;
+		margin-right: -15px;
+
+		@include screen-sm() {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		@include screen-lg() {
+			width: 90%;
+		}
+	}
 }
