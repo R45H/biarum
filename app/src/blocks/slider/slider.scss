@@ -56,20 +56,28 @@ $name: slider;
 		&_prev {
 			left: 0;
 
-			&::before,
+			&::before {
+				left: 0;
+				transform-origin: left bottom;
+			}
+
 			&::after {
 				left: 0;
-				transform-origin: left center;
+				transform-origin: left top;
 			}
 		}
 
 		&_next {
 			right: 0;
 
-			&::before,
+			&::before {
+				right: 0;
+				transform-origin: right top;
+			}
+
 			&::after {
 				right: 0;
-				transform-origin: right center;
+				transform-origin: right bottom;
 			}
 		}
 

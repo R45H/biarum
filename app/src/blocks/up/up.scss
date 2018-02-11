@@ -1,0 +1,76 @@
+$name: up;
+
+.#{$name} {
+	display: none;
+	background: none;
+	border: none;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 10rem;
+	height: 10rem;
+	cursor: pointer;
+	z-index: 20;
+	outline: none;
+
+	&::before,
+	&::after {
+		content: '';
+		display: block;
+		background-color: $color-second;
+		width: 2px;
+		height: 30%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -1px;
+		transition: $duration ease;
+	}
+
+	&::before {
+		transform: translateY(-37.5%) rotate(-45deg);
+		transform-origin: top left;
+	}
+
+	&::after {
+		transform: translateY(-37.5%) rotate(45deg);
+		transform-origin: top right;
+	}
+
+	&:hover {
+
+		&::before,
+		&::after {
+			background-color: $color-second-hover;
+		}
+
+		&::before {
+			transform: translateY(-50%) rotate(-45deg);
+		}
+
+		&::after {
+			transform: translateY(-50%) rotate(45deg);
+		}
+	}
+
+	&:focus {
+
+		&::before,
+		&::after {
+			background-color: $color-second-hover;
+		}
+
+		&::before,
+		&::after {
+			background-color: $color-second-focus;
+		}
+	}
+
+	&:active {
+
+		&::before,
+		&::after {
+			background-color: $color-second-active;
+		}
+	}
+}
