@@ -42,7 +42,7 @@ $name: menu;
 		outline: none;
 
 		&:hover {
-			border-bottom-color: inherit;
+			border-bottom-color: $color-lighter;
 		}
 
 		&:focus {

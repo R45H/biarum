@@ -85,6 +85,7 @@ $name: form;
 
 		@include screen-sm() {
 			display: table-cell;
+			vertical-align: middle;
 			padding-bottom: 2rem;
 		}
 	}
