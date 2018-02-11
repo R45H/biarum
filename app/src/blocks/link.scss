@@ -3,6 +3,7 @@ $name: link;
 .#{$name} {
 	text-decoration: none;
 	color: $color-second;
+	transition: $duration ease;
 
 	&:hover {
 		color: $color-second-hover;
@@ -10,6 +11,7 @@ $name: link;
 
 	&:focus {
 		color: $color-second-focus;
+		outline: none;
 	}
 
 	&:active {

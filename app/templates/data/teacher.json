@@ -1,0 +1,25 @@
+{
+	"teacher": [
+		{
+			"img": "img/content/slider-2/01.jpg",
+			"desc": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.“",
+			"name": "Teacher 1",
+			"status": "Pro Member",
+			"link": "#"
+		},
+		{
+			"img": "img/content/slider-2/02.jpg",
+			"desc": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ”",
+			"name": "Teacher 2",
+			"status": "Pro Member",
+			"link": "#"
+		},
+		{
+			"img": "img/content/slider-2/03.jpg",
+			"desc": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ”",
+			"name": "Teacher 3",
+			"status": "Team Member",
+			"link": "#"
+		}
+	]
+}

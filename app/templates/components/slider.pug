@@ -1,0 +1,19 @@
+include ../mixins/teacher
+
+.slider.main__slider
+
+	- var tape;
+	- for (var i = 0; i < 3; i++) {
+
+		each val, i in teacher
+			- tape = 1;
+
+			if (i && !(i % 2))
+				- tape = 3;
+			else
+				if (i && !(i % 1))
+					- tape = 2;
+
+			.slider__item
+				+teacher(val)(class= 'teacher_tape_' + tape)
+	- }

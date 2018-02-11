@@ -1,0 +1,63 @@
+$name: teacher;
+
+.#{$name} {
+	text-align: center;
+	padding: 2rem;
+
+	&__img-wrap {
+		position: relative;
+		margin-bottom: 2rem;
+		width: 100%;
+		padding-bottom: 116.7%;
+		background: url($path + 'img/content/frame.png') no-repeat center / contain;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 5%;
+			left: 50%;
+			transform: translateX(-50%);
+			background: no-repeat center / contain;
+		}
+	}
+
+	&__img {
+		background: no-repeat center / cover;
+		position: absolute;
+		top: 12.3%;
+		left: 14.7%;
+		right: 13.5%;
+		padding-bottom: 73%;
+	}
+
+	&__desc {
+		margin-bottom: 2rem;
+	}
+
+	&_tape_1 &__img-wrap {
+
+		&::after {
+			background-image: url($path + 'img/content/tape/01.png');
+			width: 6.5rem;
+			height: 3rem;
+		}
+	}
+
+	&_tape_2 &__img-wrap {
+
+		&::after {
+			background-image: url($path + 'img/content/tape/02.png');
+			width: 6.8rem;
+			height: 3.4rem;
+		}
+	}
+
+	&_tape_3 &__img-wrap {
+
+		&::after {
+			background-image: url($path + 'img/content/tape/03.png');
+			width: 6.7rem;
+			height: 3.6rem;
+		}
+	}
+}

@@ -1,0 +1,85 @@
+$name: slider;
+
+.#{$name} {
+	padding: 0 3rem;
+
+	&__btn {
+		background-color: transparent;
+		border: none;
+		border-radius: 0;
+		padding: 0;
+		width: 2rem;
+		height: 4rem;
+		display: block;
+		cursor: pointer;
+		outline: none;
+		position: absolute;
+		top: 30%;
+
+		&::before,
+		&::after {
+			content: '';
+			display: block;
+			width: 140%;
+			height: 2px;
+			background-color: $color-main;
+			position: absolute;
+			top: 50%;
+			margin-top: -1px;
+			transition: $duration ease;
+		}
+
+		&::before {
+			transform: rotate(-45deg);
+		}
+
+		&::after {
+			transform: rotate(45deg);
+		}
+
+		&:hover {
+
+			&::before,
+			&::after {
+				background-color: $color-main-hover;
+			}
+		}
+
+		&:active {
+
+			&::before,
+			&::after {
+				background-color: $color-main-active;
+			}
+		}
+
+		&_prev {
+			left: 0;
+
+			&::before,
+			&::after {
+				left: 0;
+				transform-origin: left center;
+			}
+		}
+
+		&_next {
+			right: 0;
+
+			&::before,
+			&::after {
+				right: 0;
+				transform-origin: right center;
+			}
+		}
+
+		&.slick-disabled {
+			cursor: default;
+
+			&::before,
+			&::after {
+				background-color: $color-text-light;
+			}
+		}
+	}
+}
